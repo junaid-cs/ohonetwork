@@ -1,0 +1,761 @@
+<!doctype html>
+
+<html
+  lang="en"
+  class="layout-navbar-fixed layout-compact"
+  dir="ltr"
+  data-skin="default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-no-customizer"
+  data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Member Dashboard | Vuexy - Bootstrap Dashboard PRO</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/vendor/fonts/iconify-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/pages/page-profile.css" />
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper">
+      <div class="layout-container">
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+            <!-- Header -->
+            <div class="row">
+              <div class="col-12">
+                <div class="card mb-6">
+                  <div class="user-profile-header-banner">
+                    <img src="../assets/img/pages/profile-banner.png" alt="Banner image" class="rounded-top" />
+                  </div>
+                  <div class="user-profile-header d-flex flex-column flex-lg-row text-sm-start text-center mb-5">
+                    <div class="flex-shrink-0 mt-n2 mx-sm-0 mx-auto">
+                      <img
+                        src="../assets/img/avatars/1.png"
+                        alt="user image"
+                        class="d-block h-auto ms-0 ms-sm-6 rounded user-profile-img" />
+                    </div>
+                    <div class="flex-grow-1 mt-3 mt-lg-5">
+                      <div
+                        class="d-flex align-items-md-end align-items-sm-start align-items-center justify-content-md-between justify-content-start mx-5 flex-md-row flex-column gap-4">
+                        <div class="user-profile-info">
+                          <h4 class="mb-2 mt-lg-6">John Doe</h4>
+                          <ul
+                            class="list-inline mb-0 d-flex align-items-center flex-wrap justify-content-sm-start justify-content-center gap-4 my-2">
+                            <li class="list-inline-item d-flex gap-2 align-items-center">
+                              <i class="icon-base ti tabler-palette icon-lg"></i
+                              ><span class="fw-medium">UX Designer</span>
+                            </li>
+                            <li class="list-inline-item d-flex gap-2 align-items-center">
+                              <i class="icon-base ti tabler-map-pin icon-lg"></i
+                              ><span class="fw-medium">Vatican City</span>
+                            </li>
+                            <li class="list-inline-item d-flex gap-2 align-items-center">
+                              <i class="icon-base ti tabler-calendar icon-lg"></i
+                              ><span class="fw-medium"> Joined April 2021</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="javascript:void(0)" class="btn btn-primary mb-1">
+                          <i class="icon-base ti tabler-user-check icon-xs me-2"></i>Connected
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ Header -->
+
+            <!-- Navbar pills -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="nav-align-top">
+                  <ul class="nav nav-pills flex-column flex-sm-row mb-6 gap-sm-0 gap-2">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="javascript:void(0);"
+                        ><i class="icon-base ti tabler-user-check icon-sm me-1_5"></i> Profile</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages-profile-teams.html"
+                        ><i class="icon-base ti tabler-users icon-sm me-1_5"></i> Teams</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages-profile-projects.html"
+                        ><i class="icon-base ti tabler-layout-grid icon-sm me-1_5"></i> Projects</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages-profile-connections.html"
+                        ><i class="icon-base ti tabler-link icon-sm me-1_5"></i> Connections</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--/ Navbar pills -->
+
+            <!-- User Profile Content -->
+            <div class="row">
+              <div class="col-xl-3 col-lg-4 col-md-4">
+                <!-- Sidebar Menu -->
+                <div class="card mb-6">
+                  <div class="card-body p-0">
+                    <ul class="list-group list-group-flush">
+                      <!-- My Dashboard -->
+                      <li class="list-group-item border-0 py-3">
+                        <a href="javascript:void(0);" class="d-flex align-items-center text-body">
+                          <i class="icon-base ti tabler-home icon-lg me-3"></i>
+                          <span class="fw-medium">My Dashboard</span>
+                        </a>
+                      </li>
+                      
+                      <!-- Manage Listing -->
+                      <li class="list-group-item border-0 py-3">
+                        <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between text-body" data-bs-toggle="collapse" data-bs-target="#manageListingSubmenu" aria-expanded="true">
+                          <div class="d-flex align-items-center">
+                            <i class="icon-base ti tabler-user-circle icon-lg me-3"></i>
+                            <span class="fw-medium">Manage Listing</span>
+                          </div>
+                          <i class="icon-base ti tabler-chevron-down"></i>
+                        </a>
+                        <div class="collapse show" id="manageListingSubmenu">
+                          <ul class="list-unstyled ps-4 mt-2">
+                            <li class="py-2">
+                              <a href="javascript:void(0);" class="text-body d-block">
+                                <span>– Basic Information</span>
+                              </a>
+                            </li>
+                            <li class="py-2">
+                              <a href="javascript:void(0);" class="text-body d-block">
+                                <span>– Profile Photo</span>
+                              </a>
+                            </li>
+                            <li class="py-2">
+                              <a href="javascript:void(0);" class="text-body d-block">
+                                <span>– Additional Details</span>
+                              </a>
+                            </li>
+                            <li class="py-2">
+                              <a href="javascript:void(0);" class="text-body d-block">
+                                <span>– About Me</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      
+                      <!-- Profile Statistics -->
+                      <li class="list-group-item border-0 py-3">
+                        <a href="javascript:void(0);" class="d-flex align-items-center text-body">
+                          <i class="icon-base ti tabler-chart-donut icon-lg me-3"></i>
+                          <span class="fw-medium">Profile Statistics</span>
+                        </a>
+                      </li>
+                      
+                      <!-- Manage Leads -->
+                      <li class="list-group-item border-0 py-3">
+                        <a href="javascript:void(0);" class="d-flex align-items-center text-body">
+                          <i class="icon-base ti tabler-folder-open icon-lg me-3"></i>
+                          <span class="fw-medium">Manage Leads</span>
+                        </a>
+                      </li>
+                      
+                      <!-- Manage Reviews -->
+                      <li class="list-group-item border-0 py-3">
+                        <a href="javascript:void(0);" class="d-flex align-items-center text-body">
+                          <i class="icon-base ti tabler-star-filled icon-lg me-3"></i>
+                          <span class="fw-medium">Manage Reviews</span>
+                        </a>
+                      </li>
+                      
+                      <!-- Divider -->
+                      <li class="list-group-item border-0 p-0">
+                        <hr class="my-2">
+                      </li>
+                      
+                      <!-- My Favorites -->
+                      <li class="list-group-item border-0 py-3">
+                        <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between text-body">
+                          <div class="d-flex align-items-center">
+                            <i class="icon-base ti tabler-thumb-up icon-lg me-3"></i>
+                            <span class="fw-medium">My Favorites</span>
+                          </div>
+                          <i class="icon-base ti tabler-chevron-down"></i>
+                        </a>
+                      </li>
+                      
+                      <!-- Divider -->
+                      <li class="list-group-item border-0 p-0">
+                        <hr class="my-2">
+                      </li>
+                      
+                      <!-- Coupons -->
+                      <li class="list-group-item border-0 py-3">
+                        <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between text-body">
+                          <div class="d-flex align-items-center">
+                            <i class="icon-base ti tabler-tag icon-lg me-3"></i>
+                            <span class="fw-medium">Coupons</span>
+                          </div>
+                          <span class="badge bg-label-secondary rounded-pill">0</span>
+                        </a>
+                      </li>
+                      
+                      <!-- Photo Albums -->
+                      <li class="list-group-item border-0 py-3">
+                        <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between text-body">
+                          <div class="d-flex align-items-center">
+                            <i class="icon-base ti tabler-photo icon-lg me-3"></i>
+                            <span class="fw-medium">Photo Albums</span>
+                          </div>
+                          <span class="badge bg-label-secondary rounded-pill">0</span>
+                        </a>
+                      </li>
+                      
+                      <!-- Videos -->
+                      <li class="list-group-item border-0 py-3">
+                        <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between text-body">
+                          <div class="d-flex align-items-center">
+                            <i class="icon-base ti tabler-video icon-lg me-3"></i>
+                            <span class="fw-medium">Videos</span>
+                          </div>
+                          <span class="badge bg-label-secondary rounded-pill">0</span>
+                        </a>
+                      </li>
+                      
+                      <!-- Discussions -->
+                      <li class="list-group-item border-0 py-3">
+                        <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between text-body">
+                          <div class="d-flex align-items-center">
+                            <i class="icon-base ti tabler-speakerphone icon-lg me-3"></i>
+                            <span class="fw-medium">Discussions</span>
+                          </div>
+                          <span class="badge bg-label-secondary rounded-pill">0</span>
+                        </a>
+                      </li>
+                      
+                      <!-- Divider -->
+                      <li class="list-group-item border-0 p-0">
+                        <hr class="my-2">
+                      </li>
+                      
+                      <!-- Account -->
+                      <li class="list-group-item border-0 py-3">
+                        <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between text-body">
+                          <div class="d-flex align-items-center">
+                            <i class="icon-base ti tabler-settings icon-lg me-3"></i>
+                            <span class="fw-medium">Account</span>
+                          </div>
+                          <i class="icon-base ti tabler-chevron-down"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/ Sidebar Menu -->
+              </div>
+              <div class="col-xl-9 col-lg-8 col-md-8">
+                <!-- Activity Timeline -->
+                <div class="card card-action mb-6">
+                  <div class="card-header align-items-center">
+                    <h5 class="card-action-title mb-0">
+                      <i class="icon-base ti tabler-chart-bar-popular icon-lg me-4"></i>Activity Timeline
+                    </h5>
+                    <div class="card-action-element">
+                      <div class="dropdown">
+                        <button
+                          type="button"
+                          class="btn dropdown-toggle hide-arrow p-0 text-body-secondary"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"></button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a class="dropdown-item" href="javascript:void(0);">Share timeline</a></li>
+                          <li><a class="dropdown-item" href="javascript:void(0);">Suggest edits</a></li>
+                          <li>
+                            <hr class="dropdown-divider" />
+                          </li>
+                          <li><a class="dropdown-item" href="javascript:void(0);">Report bug</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body pt-3">
+                    <ul class="timeline mb-0">
+                      <li class="timeline-item timeline-item-transparent">
+                        <span class="timeline-point timeline-point-primary"></span>
+                        <div class="timeline-event">
+                          <div class="timeline-header mb-3">
+                            <h6 class="mb-0">12 Invoices have been paid</h6>
+                            <small class="text-body-secondary">12 min ago</small>
+                          </div>
+                          <p class="mb-2">Invoices have been paid to the company</p>
+                          <div class="d-flex align-items-center mb-2">
+                            <div class="badge bg-lighter rounded d-flex align-items-center">
+                              <img src="../assets//img/icons/misc/pdf.png" alt="img" width="15" class="me-2" />
+                              <span class="h6 mb-0 text-body">invoices.pdf</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="timeline-item timeline-item-transparent">
+                        <span class="timeline-point timeline-point-success"></span>
+                        <div class="timeline-event">
+                          <div class="timeline-header mb-3">
+                            <h6 class="mb-0">Client Meeting</h6>
+                            <small class="text-body-secondary">45 min ago</small>
+                          </div>
+                          <p class="mb-2">Project meeting with john @10:15am</p>
+                          <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                            <div class="d-flex flex-wrap align-items-center mb-50">
+                              <div class="avatar avatar-sm me-2">
+                                <img src="../assets/img/avatars/1.png" alt="Avatar" class="rounded-circle" />
+                              </div>
+                              <div>
+                                <p class="mb-0 small fw-medium">Lester McCarthy (Client)</p>
+                                <small>CEO of Pixinvent</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="timeline-item timeline-item-transparent">
+                        <span class="timeline-point timeline-point-info"></span>
+                        <div class="timeline-event">
+                          <div class="timeline-header mb-3">
+                            <h6 class="mb-0">Create a new project for client</h6>
+                            <small class="text-body-secondary">2 Day Ago</small>
+                          </div>
+                          <p class="mb-2">6 team members in a project</p>
+                          <ul class="list-group list-group-flush">
+                            <li
+                              class="list-group-item d-flex justify-content-between align-items-center flex-wrap border-top-0 p-0">
+                              <div class="d-flex flex-wrap align-items-center">
+                                <ul class="list-unstyled users-list d-flex align-items-center avatar-group m-0 me-2">
+                                  <li
+                                    data-bs-toggle="tooltip"
+                                    data-popup="tooltip-custom"
+                                    data-bs-placement="top"
+                                    title="Vinnie Mostowy"
+                                    class="avatar pull-up">
+                                    <img class="rounded-circle" src="../assets/img/avatars/1.png" alt="Avatar" />
+                                  </li>
+                                  <li
+                                    data-bs-toggle="tooltip"
+                                    data-popup="tooltip-custom"
+                                    data-bs-placement="top"
+                                    title="Allen Rieske"
+                                    class="avatar pull-up">
+                                    <img class="rounded-circle" src="../assets/img/avatars/4.png" alt="Avatar" />
+                                  </li>
+                                  <li
+                                    data-bs-toggle="tooltip"
+                                    data-popup="tooltip-custom"
+                                    data-bs-placement="top"
+                                    title="Julee Rossignol"
+                                    class="avatar pull-up">
+                                    <img class="rounded-circle" src="../assets/img/avatars/2.png" alt="Avatar" />
+                                  </li>
+                                  <li class="avatar">
+                                    <span
+                                      class="avatar-initial rounded-circle pull-up"
+                                      data-bs-toggle="tooltip"
+                                      data-bs-placement="bottom"
+                                      title="3 more"
+                                      >+3</span
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/ Activity Timeline -->
+                <div class="row">
+                  <!-- Connections -->
+                  <div class="col-lg-12 col-xl-6">
+                    <div class="card card-action mb-6">
+                      <div class="card-header align-items-center">
+                        <h5 class="card-action-title mb-0">Connections</h5>
+                        <div class="card-action-element">
+                          <div class="dropdown">
+                            <button
+                              type="button"
+                              class="btn btn-icon btn-text-secondary rounded-pill dropdown-toggle hide-arrow p-0 text-body-secondary"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="icon-base ti tabler-dots-vertical icon-md text-body-secondary"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><a class="dropdown-item" href="javascript:void(0);">Share connections</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);">Suggest edits</a></li>
+                              <li>
+                                <hr class="dropdown-divider" />
+                              </li>
+                              <li><a class="dropdown-item" href="javascript:void(0);">Report bug</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <ul class="list-unstyled mb-0">
+                          <li class="mb-4">
+                            <div class="d-flex align-items-center">
+                              <div class="d-flex align-items-center">
+                                <div class="avatar me-2">
+                                  <img src="../assets/img/avatars/2.png" alt="Avatar" class="rounded-circle" />
+                                </div>
+                                <div class="me-2">
+                                  <h6 class="mb-0">Cecilia Payne</h6>
+                                  <small>45 Connections</small>
+                                </div>
+                              </div>
+                              <div class="ms-auto">
+                                <button class="btn btn-label-primary btn-icon">
+                                  <i class="icon-base ti tabler-user-check icon-22px"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="mb-4">
+                            <div class="d-flex align-items-center">
+                              <div class="d-flex align-items-center">
+                                <div class="avatar me-2">
+                                  <img src="../assets/img/avatars/3.png" alt="Avatar" class="rounded-circle" />
+                                </div>
+                                <div class="me-2">
+                                  <h6 class="mb-0">Curtis Fletcher</h6>
+                                  <small>1.32k Connections</small>
+                                </div>
+                              </div>
+                              <div class="ms-auto">
+                                <button class="btn btn-primary btn-icon">
+                                  <i class="icon-base ti tabler-user-x icon-22px"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="mb-4">
+                            <div class="d-flex align-items-center">
+                              <div class="d-flex align-items-center">
+                                <div class="avatar me-2">
+                                  <img src="../assets/img/avatars/10.png" alt="Avatar" class="rounded-circle" />
+                                </div>
+                                <div class="me-2">
+                                  <h6 class="mb-0">Alice Stone</h6>
+                                  <small>125 Connections</small>
+                                </div>
+                              </div>
+                              <div class="ms-auto">
+                                <button class="btn btn-primary btn-icon">
+                                  <i class="icon-base ti tabler-user-x icon-22px"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="mb-4">
+                            <div class="d-flex align-items-center">
+                              <div class="d-flex align-items-center">
+                                <div class="avatar me-2">
+                                  <img src="../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" />
+                                </div>
+                                <div class="me-2">
+                                  <h6 class="mb-0">Darrell Barnes</h6>
+                                  <small>456 Connections</small>
+                                </div>
+                              </div>
+                              <div class="ms-auto">
+                                <button class="btn btn-label-primary btn-icon">
+                                  <i class="icon-base ti tabler-user-check icon-22px"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="mb-6">
+                            <div class="d-flex align-items-center">
+                              <div class="d-flex align-items-center">
+                                <div class="avatar me-2">
+                                  <img src="../assets/img/avatars/12.png" alt="Avatar" class="rounded-circle" />
+                                </div>
+                                <div class="me-2">
+                                  <h6 class="mb-0">Eugenia Moore</h6>
+                                  <small>1.2k Connections</small>
+                                </div>
+                              </div>
+                              <div class="ms-auto">
+                                <button class="btn btn-label-primary btn-icon">
+                                  <i class="icon-base ti tabler-user-check icon-22px"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="text-center">
+                            <a href="javascript:;">View all connections</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ Connections -->
+                  <!-- Teams -->
+                  <div class="col-lg-12 col-xl-6">
+                    <div class="card card-action mb-6">
+                      <div class="card-header align-items-center">
+                        <h5 class="card-action-title mb-0">Teams</h5>
+                        <div class="card-action-element">
+                          <div class="dropdown">
+                            <button
+                              type="button"
+                              class="btn btn-icon btn-text-secondary dropdown-toggle hide-arrow p-0"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="icon-base ti tabler-dots-vertical icon-md text-body-secondary"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><a class="dropdown-item" href="javascript:void(0);">Share teams</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);">Suggest edits</a></li>
+                              <li>
+                                <hr class="dropdown-divider" />
+                              </li>
+                              <li><a class="dropdown-item" href="javascript:void(0);">Report bug</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <ul class="list-unstyled mb-0">
+                          <li class="mb-4">
+                            <div class="d-flex align-items-center">
+                              <div class="d-flex align-items-center">
+                                <div class="avatar me-2">
+                                  <img
+                                    src="../assets/img/icons/brands/react-label.png"
+                                    alt="Avatar"
+                                    class="rounded-circle" />
+                                </div>
+                                <div class="me-2">
+                                  <h6 class="mb-0">React Developers</h6>
+                                  <small>72 Members</small>
+                                </div>
+                              </div>
+                              <div class="ms-auto">
+                                <a href="javascript:;"><span class="badge bg-label-danger">Developer</span></a>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="mb-4">
+                            <div class="d-flex align-items-center">
+                              <div class="d-flex align-items-center">
+                                <div class="avatar me-2">
+                                  <img
+                                    src="../assets/img/icons/brands/support-label.png"
+                                    alt="Avatar"
+                                    class="rounded-circle" />
+                                </div>
+                                <div class="me-2">
+                                  <h6 class="mb-0">Support Team</h6>
+                                  <small>122 Members</small>
+                                </div>
+                              </div>
+                              <div class="ms-auto">
+                                <a href="javascript:;"><span class="badge bg-label-primary">Support</span></a>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="mb-4">
+                            <div class="d-flex align-items-center">
+                              <div class="d-flex align-items-center">
+                                <div class="avatar me-2">
+                                  <img
+                                    src="../assets/img/icons/brands/figma-label.png"
+                                    alt="Avatar"
+                                    class="rounded-circle" />
+                                </div>
+                                <div class="me-2">
+                                  <h6 class="mb-0">UI Designers</h6>
+                                  <small>7 Members</small>
+                                </div>
+                              </div>
+                              <div class="ms-auto">
+                                <a href="javascript:;"><span class="badge bg-label-info">Designer</span></a>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="mb-4">
+                            <div class="d-flex align-items-center">
+                              <div class="d-flex align-items-center">
+                                <div class="avatar me-2">
+                                  <img
+                                    src="../assets/img/icons/brands/vue-label.png"
+                                    alt="Avatar"
+                                    class="rounded-circle" />
+                                </div>
+                                <div class="me-2">
+                                  <h6 class="mb-0">Vue.js Developers</h6>
+                                  <small>289 Members</small>
+                                </div>
+                              </div>
+                              <div class="ms-auto">
+                                <a href="javascript:;"><span class="badge bg-label-danger">Developer</span></a>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="mb-6">
+                            <div class="d-flex align-items-center">
+                              <div class="d-flex align-items-center">
+                                <div class="avatar me-2">
+                                  <img
+                                    src="../assets/img/icons/brands/twitter-label.png"
+                                    alt="Avatar"
+                                    class="rounded-circle" />
+                                </div>
+                                <div class="me-w">
+                                  <h6 class="mb-0">Digital Marketing</h6>
+                                  <small>24 Members</small>
+                                </div>
+                              </div>
+                              <div class="ms-auto">
+                                <a href="javascript:;"><span class="badge bg-label-secondary">Marketing</span></a>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="text-center">
+                            <a href="javascript:;">View all teams</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ Teams -->
+                </div>
+                <!-- Projects table -->
+                <div class="card mb-6">
+                  <div class="mb-4">
+                    <table class="table datatable-project">
+                      <thead class="border-top">
+                        <tr>
+                          <th></th>
+                          <th></th>
+                          <th>Project</th>
+                          <th>Leader</th>
+                          <th>Team</th>
+                          <th class="w-px-200">Progress</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+                <!--/ Projects table -->
+              </div>
+            </div>
+            <!--/ User Profile Content -->
+          </div>
+          <!-- / Content -->
+
+          <!-- Footer -->
+          <footer class="content-footer footer bg-footer-theme">
+            <div class="container-xxl">
+              <div
+                class="footer-container d-flex align-items-center justify-content-between py-4 flex-md-row flex-column">
+                <div class="text-body">
+                  ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  , made with ❤️ by <a href="https://pixinvent.com" target="_blank" class="footer-link">Pixinvent</a>
+                </div>
+                <div class="d-none d-lg-inline-block">
+                  <a href="https://themeforest.net/licenses/standard" class="footer-link me-4" target="_blank"
+                    >License</a
+                  >
+                  <a href="https://themeforest.net/user/pixinvent/portfolio" target="_blank" class="footer-link me-4"
+                    >More Themes</a
+                  >
+
+                  <a
+                    href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/"
+                    target="_blank"
+                    class="footer-link me-4"
+                    >Documentation</a
+                  >
+
+                  <a href="https://pixinvent.ticksy.com/" target="_blank" class="footer-link d-none d-sm-inline-block"
+                    >Support</a
+                  >
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- / Footer -->
+
+          <div class="content-backdrop fade"></div>
+        </div>
+        <!-- Content wrapper -->
+      </div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="../assets/vendor/libs/@algolia/autocomplete-js.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="../assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
+
+    <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="../assets/js/app-user-view-account.js"></script>
+  </body>
+</html>
